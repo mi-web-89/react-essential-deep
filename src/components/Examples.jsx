@@ -32,7 +32,7 @@ export default function Examples() {
     <Section id="examples" title="Examples">
       <Tabs
         // setting component type dynamically
-        // 1. huruf pertama harus
+        // 1. huruf pertama harus Besar
         // 2. elemen (string), custom element ({}) ex: {Section}
         ButtonsContainer="menu" 
         buttons={
