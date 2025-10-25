@@ -9,7 +9,6 @@ export default function Examples() {
 
   function handleSelect(selectedButton) {
     setSelectedTopic(selectedButton); // selectedButton => 'components', 'jsx', 'props', 'state'
-    // console.log(selectedButton);
   }
 
   let tabContent = <p>Please select a topic.</p>;
@@ -26,15 +25,17 @@ export default function Examples() {
     );
   }
 
-  // console.log('EXAMPLES', selectedTopic);
+  console.log('EXAMPLES => ', selectedTopic);
 
   return (
     <Section id="examples" title="Examples">
       <Tabs
         // setting component type dynamically
         // 1. huruf pertama harus Besar
-        // 2. elemen (string), custom element ({}) ex: {Section}
-        ButtonsContainer="menu" 
+        // 2. elemen (string), jika custom element pakai '{}', contoh: {Section}
+        ButtonsContainer="menu" // => component type
+
+        // slot
         buttons={
           <>
             <TabButton
